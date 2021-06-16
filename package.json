@@ -2,6 +2,7 @@
   "name": "movie-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://scriptme1.github.io/movie-app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@testing-library/jest-dom": "^5.12.0",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

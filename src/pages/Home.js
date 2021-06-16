@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import Banner from '../components/Banner/Banner';
 
-import bgVideo from '../video/bg-vid1.mp4';
-
+import bgVideo from '../video/world.mp4';
 function Home() {
   useEffect(() => {
     document.getElementsByClassName('navbar')[0].style.visibility = 'visible';
