@@ -15,7 +15,7 @@ function App() {
       <React.Fragment>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/movie-app" exact component={Home} />
           <Route path="/movies" exact component={Movie} />
           <Route path="/movies/:movieId" component={MoviePage} exact />
           <Route path="/movie/:movieId" component={MoviePlayer} exact />

@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className="nav-links">
             <ul>
               <li className="nav-link" style={{ '--i': '.6s' }}>
-                <Link className="sublink" to="/">
+                <Link className="sublink" to="/movie-app">
                   Home
                 </Link>
               </li>
