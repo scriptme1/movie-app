@@ -95,9 +95,17 @@ const MovieList = (props) => {
   }, [isFetching]);
 
   const handleScroll = () => {
+    const fullPageHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.pageYOffset;
+    const currentScreenHeight = fullPageHeight - scrollTop;
+
+    const isBottomNotHit = currentScreenHeight + scrollTop !== fullPageHeight;
+
+
     if (
       window.innerHeight + document.documentElement.scrollTop !==
-      document.documentElement.offsetHeight
+        document.documentElement.offsetHeight ||
+      isBottomNotHit
     )
       return;
     setIsFetching(true);

@@ -52,11 +52,13 @@ export const GridElement = styled.div`
    
     &:nth-child(2n + 2) {
       margin: 0 auto;
+      padding-top: 10px;
     }
   }
 
   @media (max-width: 480px) {
     margin: 0 auto;
+    padding-top: 10px;
     max-height: 700px;
   }
 `;

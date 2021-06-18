@@ -92,12 +92,13 @@ export const VideoBg = styled.video`
 export const Button = styled.button`
   opacity: 1;
   color: #baf733;
- 
+
   background-color: #222;
   width: 20%;
   height: 50px;
   border-radius: 20px;
   margin-top: 20px;
+  margin-left: 20px;
   opacity: 0.7;
   text-transform: uppercase;
 

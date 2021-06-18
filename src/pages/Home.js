@@ -12,7 +12,6 @@ function Home() {
   return (
     <div style={{ backgroundColor: '#353535' }}>
       <Banner videoFile={bgVideo} Header={'MOVIES'} />
-      {/* <MovieList state={state} setState={setState} /> */}
     </div>
   );
 }

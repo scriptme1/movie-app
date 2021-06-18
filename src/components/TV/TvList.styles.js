@@ -8,14 +8,6 @@ export const TvCards = styled.div`
 
 export const FourColGrid = styled.div``;
 
-// export const Image = styled.img`
-//   width: 500px;
-//   height: auto;
-//   max-width: 100%;
-//   max-height: 100%;
-//   transition: all 0.3s;
-//   box-sizing: border-box;
-// `;
 
 export const GridContent = styled.div`
   display: grid;
@@ -55,12 +47,14 @@ export const GridElement = styled.div`
 
   @media screen and (max-width: 720px) {
     &:nth-child(2n + 2) {
-      margin-right: 0;
+      margin-right: 0 auto;
+      padding-top: 10px;
     }
   }
 
   @media (max-width: 480px) {
-    margin-right: 0;
+    margin-right: 0 auto;
+    padding-top: 10px;
     max-height: 700px;
   }
 `;

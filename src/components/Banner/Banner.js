@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Section,
   Background,
@@ -26,9 +27,17 @@ const Banner = ({ videoFile, Header }) => {
         <TextDiv>
           <H1>GET TO KNOW YOUR FAVORITE {Header}</H1>
           <P>Sign up with us and create your own {Header} collections </P>
-          
-            <Button>Explore {Header} </Button>
-          
+
+          <Button>
+            <Link className="sublink" to="/movies" style={{ color: '#baf733' }}>
+              Movies
+            </Link>
+          </Button>
+          <Button>
+            <Link className="sublink" to="/tv" style={{ color: '#baf733' }}>
+              TV Series
+            </Link>
+          </Button>
         </TextDiv>
       </Section>
     </>
