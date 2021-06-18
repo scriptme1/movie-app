@@ -35,7 +35,7 @@ export const GridElement = styled.div`
   margin: 0 40px 40px 0;
   background: #353535;
   max-height: 430px;
-  max-width: 300px;
+  /* max-width: 300px; */
   animation: ${animateGrid} 0.5s;
   overflow: hidden;
   border-radius: 5%;
@@ -47,14 +47,14 @@ export const GridElement = styled.div`
 
   @media screen and (max-width: 720px) {
     &:nth-child(2n + 2) {
-      margin-right: 0 auto;
-      padding-top: 10px;
+      margin-right: 0;
+      /* padding-top: 10px; */
     }
   }
 
   @media (max-width: 480px) {
-    margin-right: 0 auto;
-    padding-top: 10px;
+    margin: 0 auto;
+    padding-bottom: 20px;
     max-height: 700px;
   }
 `;
