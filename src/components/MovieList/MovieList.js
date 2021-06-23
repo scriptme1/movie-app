@@ -94,13 +94,12 @@ const MovieList = (props) => {
      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFetching]);
 
-  const handleScroll = () => {
+  const handleScroll = (e) => {
     const fullPageHeight = document.documentElement.scrollHeight;
     const scrollTop = window.pageYOffset;
     const currentScreenHeight = fullPageHeight - scrollTop;
 
     const isBottomNotHit = currentScreenHeight + scrollTop !== fullPageHeight;
-
 
     if (
       window.innerHeight + document.documentElement.scrollTop !==
