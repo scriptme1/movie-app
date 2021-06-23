@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/movie-app/static/css/main.24a44eb3.chunk.css",
-    "main.js": "/movie-app/static/js/main.b5927c74.chunk.js",
-    "main.js.map": "/movie-app/static/js/main.b5927c74.chunk.js.map",
+    "main.css": "/movie-app/static/css/main.e1728266.chunk.css",
+    "main.js": "/movie-app/static/js/main.02365ce3.chunk.js",
+    "main.js.map": "/movie-app/static/js/main.02365ce3.chunk.js.map",
     "runtime-main.js": "/movie-app/static/js/runtime-main.4483eb92.js",
     "runtime-main.js.map": "/movie-app/static/js/runtime-main.4483eb92.js.map",
     "static/css/2.ab75b8d7.chunk.css": "/movie-app/static/css/2.ab75b8d7.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.7d2b2cd8.chunk.js.map": "/movie-app/static/js/3.7d2b2cd8.chunk.js.map",
     "index.html": "/movie-app/index.html",
     "static/css/2.ab75b8d7.chunk.css.map": "/movie-app/static/css/2.ab75b8d7.chunk.css.map",
-    "static/css/main.24a44eb3.chunk.css.map": "/movie-app/static/css/main.24a44eb3.chunk.css.map",
+    "static/css/main.e1728266.chunk.css.map": "/movie-app/static/css/main.e1728266.chunk.css.map",
     "static/js/2.0abf20b5.chunk.js.LICENSE.txt": "/movie-app/static/js/2.0abf20b5.chunk.js.LICENSE.txt",
     "static/media/avengers.4e6462fb.mp4": "/movie-app/static/media/avengers.4e6462fb.mp4",
     "static/media/mandalorian.e7692d6a.mp4": "/movie-app/static/media/mandalorian.e7692d6a.mp4",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.4483eb92.js",
     "static/css/2.ab75b8d7.chunk.css",
     "static/js/2.0abf20b5.chunk.js",
-    "static/css/main.24a44eb3.chunk.css",
-    "static/js/main.b5927c74.chunk.js"
+    "static/css/main.e1728266.chunk.css",
+    "static/js/main.02365ce3.chunk.js"
   ]
 }
