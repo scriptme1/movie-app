@@ -102,17 +102,19 @@ const TvList = (props) => {
     // const isBottomNotHit = currentScreenHeight + scrollTop !== fullPageHeight;
 
     if (
-      document.documentElement.scrollTop + window.innerHeight >=
-   
-   
-   
-            document.documentElement.scrollHeight
+      // window.pageYOffset >= window.clientHeight && Math.round((document.documentElement.scrollTop + window.innerHeight)) < document.documentElement.scrollHeight - 72
+
+
+     Math.round(document.documentElement.scrollTop + window.innerHeight) >=
+     Math.round(document.documentElement.scrollHeight)
+      
+      
       // window.innerHeight + document.documentElement.scrollTop !==
       //   document.documentElement.offsetHeight ||
       // isBottomNotHit
     )
       // return;
-            setIsFetching(true);
+      setIsFetching(true);
   };
 
   return isLoading ? (
