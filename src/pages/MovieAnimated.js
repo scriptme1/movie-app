@@ -3,7 +3,7 @@ import Banner from '../components/Banner/Banner';
 import MovieList from '../components/MovieList/MovieList';
 import bgVideo from '../video/avengers.mp4';
 
-const MovieAction = () => {
+const MovieAnimated = () => {
   useEffect(() => {
     document.getElementsByClassName('navbar')[0].style.visibility = 'visible';
   }, []);
@@ -18,4 +18,4 @@ const MovieAction = () => {
   );
 };
 
-export default MovieAction;
+export default MovieAnimated;

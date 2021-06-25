@@ -168,6 +168,21 @@ const MovieList = (props) => {
         setPageNumber(pageNumber + 1);
       }
 
+    } else if (props.genres === 'horror') {
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${27}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+
     }
    
 

@@ -9,9 +9,6 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-
-
-
   return (
     <nav className="navbar">
       <div className="container">
@@ -63,6 +60,11 @@ const Navbar = () => {
                         Animation
                       </Link>
                     </li>
+                    <li className="dropdown-link">
+                      <Link className="sublink" to="/horrormovies">
+                        Horror
+                      </Link>
+                    </li>
                     <div className="arrow"></div>
                   </ul>
                 </div>
@@ -74,69 +76,34 @@ const Navbar = () => {
                 <div className="dropdown">
                   <ul>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
+                      <Link className="sublink" to="/actiontv">
                         Action
                       </Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
-                        Drama
+                      <Link className="sublink" to="/documentarytv">
+                        Documentary
                       </Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
+                      <Link className="sublink" to="/comedytv">
                         Comedy
                       </Link>
-                      {/* <div className="dropdown second">
-                        <ul>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              Link 1
-                            </Link>
-                          </li>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              Link 2
-                            </Link>
-                          </li>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              Link 3
-                            </Link>
-                          </li>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              More
-                              <BiDownArrow />
-                            </Link>
-                            <div className="dropdown second">
-                              <ul>
-                                <li className="dropdown-link">
-                                  <Link className="sublink" to="#">
-                                    Link 1
-                                  </Link>
-                                </li>
-                                <li className="dropdown-link">
-                                  <Link className="sublink" to="#">
-                                    Link 2
-                                  </Link>
-                                </li>
-                                <li className="dropdown-link">
-                                  <Link className="sublink" to="#">
-                                    Link 3
-                                  </Link>
-                                </li>
-                                <div className="arrow"></div>
-                              </ul>
-                            </div>
-                          </li>
-                          <div className="arrow"></div>
-                        </ul>
-                      </div> */}
+                      
                     </li>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
-                        Suspense
+                      <Link className="sublink" to="/scifitv">
+                        SciFi
+                      </Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link className="sublink" to="/animatedtv">
+                        Animation
+                      </Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link className="sublink" to="/crimetv">
+                        Crime
                       </Link>
                     </li>
                     <div className="arrow"></div>

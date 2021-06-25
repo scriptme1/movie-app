@@ -6,7 +6,7 @@ import VideoBg from '../video/mandalorian.mp4';
 // import axios from 'axios';
 // import { API_URL, API_KEY } from '../config';
 
-function Home() {
+function TvAction() {
   useEffect(() => {
     document.getElementsByClassName('navbar')[0].style.visibility = 'visible';
   }, []);
@@ -15,11 +15,11 @@ function Home() {
 
   return (
     <>
-      <Banner videoFile={VideoBg} Header={'TV SERIES'} />
+      <Banner videoFile={VideoBg} Header={'ACTION SERIES'} />
 
-      <TvList state={state} setState={setState} genres={'popular'} />
+      <TvList state={state} setState={setState} genres={'action'} />
     </>
   );
 }
 
-export default Home;
+export default TvAction;
