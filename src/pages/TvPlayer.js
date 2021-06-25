@@ -11,11 +11,11 @@ const TvPlayer = () => {
   const { episodeNumber } = useParams();
 
   const url = `https://fsapi.xyz/tv-tmdb/${tvId}-${seasonNumber}-${episodeNumber}`;
-  console.log(url);
+  // console.log(url);
   return (
     <div>
       <iframe
-        sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+         sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
         src={url}
         frameBorder={0}
         allowFullScreen={true}

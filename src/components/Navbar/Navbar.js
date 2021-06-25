@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // import styles from 'Navbar.css';
 // import { menuData } from '../../data/MenuData';
 // import { Button } from './Button';
- import { BiDownArrow } from 'react-icons/bi';
+//  import { BiDownArrow } from 'react-icons/bi';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -38,72 +38,31 @@ const Navbar = () => {
                 <div className="dropdown">
                   <ul>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
-                        Link 1
+                      <Link className="sublink" to="/actionmovies">
+                        Action
                       </Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
-                        Link 2
+                      <Link className="sublink" to="/dramamovies">
+                        Drama
                       </Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
-                        Link 3<BiDownArrow />
+                      <Link className="sublink" to="/comedymovies">
+                        Comedy
                       </Link>
-                      <div className="dropdown second">
-                        <ul>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              Link 1
-                            </Link>
-                          </li>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              Link 2
-                            </Link>
-                          </li>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              Link 3
-                            </Link>
-                          </li>
-                          <li className="dropdown-link">
-                            <Link className="sublink" to="#">
-                              More
-                              <BiDownArrow />
-                            </Link>
-                            <div className="dropdown second">
-                              <ul>
-                                <li className="dropdown-link">
-                                  <Link className="sublink" to="#">
-                                    Link 1
-                                  </Link>
-                                </li>
-                                <li className="dropdown-link">
-                                  <Link className="sublink" to="#">
-                                    Link 2
-                                  </Link>
-                                </li>
-                                <li className="dropdown-link">
-                                  <Link className="sublink" to="#">
-                                    Link 3
-                                  </Link>
-                                </li>
-                                <div className="arrow"></div>
-                              </ul>
-                            </div>
-                          </li>
-                          <div className="arrow"></div>
-                        </ul>
-                      </div>
+                      
                     </li>
                     <li className="dropdown-link">
-                      <Link className="sublink" to="#">
-                        Link 4
+                      <Link className="sublink" to="/scifimovies">
+                        Sci-Fi
                       </Link>
                     </li>
-
+                    <li className="dropdown-link">
+                      <Link className="sublink" to="/animatedmovies">
+                        Animation
+                      </Link>
+                    </li>
                     <div className="arrow"></div>
                   </ul>
                 </div>
@@ -116,19 +75,19 @@ const Navbar = () => {
                   <ul>
                     <li className="dropdown-link">
                       <Link className="sublink" to="#">
-                        Link 1
+                        Action
                       </Link>
                     </li>
                     <li className="dropdown-link">
                       <Link className="sublink" to="#">
-                        Link 2
+                        Drama
                       </Link>
                     </li>
                     <li className="dropdown-link">
                       <Link className="sublink" to="#">
-                        Link 3<BiDownArrow />
+                        Comedy
                       </Link>
-                      <div className="dropdown second">
+                      {/* <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
                             <Link className="sublink" to="#">
@@ -173,11 +132,11 @@ const Navbar = () => {
                           </li>
                           <div className="arrow"></div>
                         </ul>
-                      </div>
+                      </div> */}
                     </li>
                     <li className="dropdown-link">
                       <Link className="sublink" to="#">
-                        Link 4
+                        Suspense
                       </Link>
                     </li>
                     <div className="arrow"></div>

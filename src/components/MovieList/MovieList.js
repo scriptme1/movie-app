@@ -62,17 +62,114 @@ const MovieList = (props) => {
   const fetchMoreListItems = async (pageNumber) => {
     let endpoint = '';
     setisLoading(true);
-    if (searchTerm === '') {
-      endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=${
-        pageNumber + 1
-      }`;
-      setPageNumber(pageNumber + 1);
-    } else {
-      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
-        pageNumber + 1
-      }`;
-      setPageNumber(pageNumber + 1);
+
+    if (props.genres === 'popular') {
+      if (searchTerm === '') {
+        endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+
+    } else if (props.genres === 'action') {
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${28}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+    } else if (props.genres === 'drama') {
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${18}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+
+    } else if (props.genres === 'comedy') {
+        
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${35}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+      
+    } else if (props.genres === 'scifi') {
+
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${878}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+
+
+    } else if (props.genres === 'horror') {
+
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${27}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+    } else if (props.genres === 'animated') {
+      if (searchTerm === '') {
+       
+        endpoint = `${API_URL}discover/movie?api_key=${API_KEY}&with_genres=${16}&page=${
+          pageNumber + 1
+        }`;
+       
+        setPageNumber(pageNumber + 1);
+      } else {
+        endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=${
+          pageNumber + 1
+        }`;
+        setPageNumber(pageNumber + 1);
+      }
+
     }
+   
 
     await axios
       .get(`${endpoint}`)
@@ -95,17 +192,12 @@ const MovieList = (props) => {
   }, [isFetching]);
 
   const handleScroll = (e) => {
-    // const fullPageHeight = document.documentElement.scrollHeight;
-    // const scrollTop = window.pageYOffset;
-    // const currentScreenHeight = fullPageHeight - scrollTop;
-
-    // const isBottomNotHit = currentScreenHeight + scrollTop !== fullPageHeight;
+   
 
     if (
       Math.round(document.documentElement.scrollTop + window.innerHeight) >=
       Math.round(document.documentElement.scrollHeight)
-      // window.innerHeight + document.documentElement.scrollTop !==
-      //   document.documentElement.offsetHeight
+     
     )
       setIsFetching(true);
   };
@@ -122,9 +214,10 @@ const MovieList = (props) => {
             marginTop: '20px',
             marginBottom: '20px',
             color: '#baf733',
+            textTransform: 'uppercase'
           }}
         >
-          Popular Movies
+          {props.genres} Movies
         </h1>
         <GridContent>
           {props.state.map((movie) => (

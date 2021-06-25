@@ -3,7 +3,7 @@ import Banner from '../components/Banner/Banner';
 import MovieList from '../components/MovieList/MovieList';
 import bgVideo from '../video/avengers.mp4';
 
-const Movie = () => {
+const MovieAction = () => {
   useEffect(() => {
     document.getElementsByClassName('navbar')[0].style.visibility = 'visible';
   }, []);
@@ -12,10 +12,10 @@ const Movie = () => {
 
   return (
     <div style={{ backgroundColor: '#353535' }}>
-      <Banner videoFile={bgVideo} Header={'MOVIES'} />
-      <MovieList state={state} setState={setState} genres={'popular'} />
+      <Banner videoFile={bgVideo} Header={'ANIMATED MOVIES'} />
+      <MovieList state={state} setState={setState} genres={'animated'} />
     </div>
   );
 };
 
-export default Movie;
+export default MovieAction;

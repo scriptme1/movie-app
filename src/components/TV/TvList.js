@@ -95,25 +95,15 @@ const TvList = (props) => {
   }, [isFetching]);
 
   const handleScroll = () => {
-    // const fullPageHeight = document.documentElement.scrollHeight;
-    // const scrollTop = window.pageYOffset;
-    // const currentScreenHeight = fullPageHeight - scrollTop;
-
-    // const isBottomNotHit = currentScreenHeight + scrollTop !== fullPageHeight;
+  
 
     if (
       // window.pageYOffset >= window.clientHeight && Math.round((document.documentElement.scrollTop + window.innerHeight)) < document.documentElement.scrollHeight - 72
-
-
      Math.round(document.documentElement.scrollTop + window.innerHeight) >=
      Math.round(document.documentElement.scrollHeight)
       
-      
-      // window.innerHeight + document.documentElement.scrollTop !==
-      //   document.documentElement.offsetHeight ||
-      // isBottomNotHit
     )
-      // return;
+     
       setIsFetching(true);
   };
 
