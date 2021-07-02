@@ -125,7 +125,7 @@ const TvList = (props) => {
 
     } else if (props.genres === 'scifi') {
       if (searchTerm === '') {
-        endpoint = `${API_URL}discover/tv?api_key=${API_KEY}&with_genres=878&language=en-US&page=${
+        endpoint = `${API_URL}discover/tv?api_key=${API_KEY}&with_genres=10765&language=en-US&page=${
           pageNumber + 1
         }`;
         setPageNumber(pageNumber + 1);

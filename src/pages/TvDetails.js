@@ -15,7 +15,7 @@ const MoviePage = () => {
 
   let { tvId } = useParams();
   const [tvshow, loading, error] = useTvFetch(tvId);
-  // console.log('Movie Result:', movie);
+  console.log(tvshow);
 
   if (error) return <div> Something went wrong....try to refresh</div>;
   if (loading) return <LoadingSpinner />;

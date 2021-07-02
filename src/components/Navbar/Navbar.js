@@ -48,7 +48,6 @@ const Navbar = () => {
                       <Link className="sublink" to="/comedymovies">
                         Comedy
                       </Link>
-                      
                     </li>
                     <li className="dropdown-link">
                       <Link className="sublink" to="/scifimovies">
@@ -89,11 +88,10 @@ const Navbar = () => {
                       <Link className="sublink" to="/comedytv">
                         Comedy
                       </Link>
-                      
                     </li>
                     <li className="dropdown-link">
                       <Link className="sublink" to="/scifitv">
-                        SciFi
+                        SciFi and Fantasy
                       </Link>
                     </li>
                     <li className="dropdown-link">

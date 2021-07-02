@@ -15,7 +15,7 @@ const TvPlayer = () => {
   return (
     <div>
       <iframe
-         sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+        sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
         src={url}
         frameBorder={0}
         allowFullScreen={true}
@@ -38,3 +38,4 @@ const TvPlayer = () => {
 };
 
 export default TvPlayer;
+//?autoplay=1&fs=1&enablejsapi=1&enablecastapi=1
