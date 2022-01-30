@@ -6,7 +6,7 @@ import { Container } from './LoadingSpinner.styles';
 const LoadingSpinner = () => {
   return (
     <Container>
-      <Loader type="Bars" color="#00BFFF" height={50} width={50} />;
+      <Loader type="Bars" color="#00BFFF" height={50} width={50} />
     </Container>
   ); 
 };
